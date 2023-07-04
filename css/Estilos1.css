@@ -1,0 +1,68 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(4deg, white, #DAFCEA);
+}
+
+/* 1-Animacion Sencilla*/
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideAnimation 1s ease-in;
+}
+
+/*2-Borde con imagen*/
+#border_image {
+  width: 200px;
+  height: 200px;
+  border: 10px solid;
+  border-image: url('img/Bio.jpg') 30 round;
+}
+/* 3-Borde Redondeado*/
+.rounded-border {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+/*4-Definición de tamaño de cada sección*/
+.section {
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+}
+
+/* 6-Fondo degradado*/
+#Gradiante{
+    background: linear-gradient(to right, #ff0000, #0000ff);
+}
+
+/*Menu*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  background-color: #f2f2f2;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+}
